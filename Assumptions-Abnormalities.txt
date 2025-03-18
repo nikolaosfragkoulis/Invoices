@@ -7,5 +7,9 @@
 7) Transactions with non-positive prices are not included in the FACT_SALES table.A non-positive price may indicate invalid, missing, or promotional transactions, which should not be included in our product dimension.
 The most recent product description is used
 8)If a product appears multiple times with different descriptions, the latest available description (based on transaction date) is considered.
+9)Some transactions in raw_data appear to be duplicates when comparing only INVOICE, PRODUCT and QUANTITY.The original data includes a timestamp in the date field, which was removed when populating FACT_SALES.
+Multiple transactions for the same invoice and product may occur at different times on the same day.Some invoices may contain multiple purchases of the same item throughout the day.
+Even if multiple records appear to be duplicates at the date level, they may represent separate transactions that occurred at different times within the same day.
+This ensures that all sales transactions are retained without unintentionally losing valid data.
 
 
