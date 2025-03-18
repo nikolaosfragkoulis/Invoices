@@ -9,16 +9,11 @@ def imp_tbl():
         f"DRIVER={{SQL Server}};SERVER={sql_server_nm};DATABASE={database_nm};UID={server_username};PWD={server_password}"
     )
 
-
-
     #load dataframe
     raw_data = load_cleaned_Data()
 
     # Execute query
     cursor = conn.cursor()
-
-
-
   
     print("Insert DataFrame values to SQL SERVER")
 
