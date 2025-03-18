@@ -27,12 +27,11 @@ The project is structured for easy maintenance, extension, and execution on any 
       │   ├── requirements.txt
       │── SQL_queries/
       │   ├── 1_Database_schema_creation.sql
-      │   ├── Fill_dim_tables.sql
-      │   ├── Fill_Fact_table.sql
-      │   ├── Examples_of_Data_investigation.sql
-      │   ├── Revenue_by_Country.sql
-      │   ├── Top_10_Best_Selling_Products.sql
-      │   ├── Total_Revenue_per_Month.sql
+      │   ├── 2_Fill_Dim_tables.sql
+      │   ├── 3_Fill_Fact_table.sql
+      │   ├── Aggregation_1.sql
+      │   ├── Aggregation_2.sql
+      │   ├── Aggregation_3.sql
       │── invoice_files/
       │   ├── Invoices_Year_2009-2010.csv
       │── Assumptions-Abnormalities.txt
