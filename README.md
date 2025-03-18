@@ -94,11 +94,11 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
 
          ```env
          SQL_SERVER_NM=Your_Server_Name
-         DATABASE_NM=InvoiceDWH <-- This should not be changed
+         DATABASE_NM=InvoiceDWH  #Do Not Change this
          SERVER_USERNAME=Your_Username
          SERVER_PASSWORD=Your_Password
          ```
-      4. Save the file and close the editor.
+      4. Save and close the file.
 
      ### Step 2: Open SQL Server Management Studio (SSMS)
       1. Launch SQL Server Management Studio (SSMS).
@@ -108,20 +108,20 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
      ### Step 3: Execute the First SQL Query
       1. Navigate to the **Invoices/SQL_queries** folder.
       2. Open the file **1_Database_schema_creation.sql** in SSMS.
-      3. Click Execute 
+      3. Click Execute to create the database schema.
 
  3. **Run the Python Script**
 
      ### Step 1: Install Required Dependencies
 
       1. Open the command prompt.
-      2. Navigate to the **Invoices/Code** directory:
+      2. Navigate to the **Invoices/Code** directory.
       3. Run the **requirements.py** script to install dependencies:
          ```bash
             pip install -r requirements.txt
          ```
 
-     ### Step 2: Run the code
+     ### Step 2: Run the main script
       1. Run the script:
          ```bash
             python main.py
