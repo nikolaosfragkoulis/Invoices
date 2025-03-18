@@ -53,13 +53,13 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
 ### **3. Data Warehouse Design**
    - Applied **Kimball Methodology** for dimensional modeling.
    - Designed and created **dimensional tables (dim_products, dim_customers, dim_dates)**.
-   - Created a **fact table ('fact_sales')** to store transactional data.
+   - Created a **fact table (fact_sales)** to store transactional data.
    - Established relationships between dimensions and the fact table.
 
 ### **4. Data Load Process**
    - Loaded cleaned and structured data into **Microsoft SQL Server**.
-   - Inserted **dimension data** ('dim_products', 'dim_customers', 'dim_dates', 'dim_time').
-   - Inserted **fact data** ('fact_sales')
+   - Inserted **dimension data** (dim_products, dim_customers, dim_dates, dim_time).
+   - Inserted **fact data** (fact_sales)
      
 ### **5. Business Assumptions & Data Issues**
    - Handled multiple descriptions for the same product by keeping the latest description.
@@ -67,9 +67,9 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
 
 ### **6. Aggregations**
    - Created SQL queries for three key aggregations:
-     - **Total Revenue per Month ('Aggregation_1.sql')**
-     - **Top 10 Best-Selling Products ('Aggregation_2.sql')**
-     - **Revenue by Country ('Aggregation_3.sql')**
+     - **Total Revenue per Month (Aggregation_1.sql)**
+     - **Top 10 Best-Selling Products (Aggregation_2.sql)**
+     - **Revenue by Country (Aggregation_3.sql)**
    - Queries can be executed in **SQL Server Management Studio**.
 
 ---
@@ -122,7 +122,7 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
          ```
 
      ### Step 2: Run the main script
-      1. Run the script in order to extract data, clean it, and prepare it for loading into SQL Server in **'raw_data'** table:
+      1. Run the script in order to extract data, clean it, and prepare it for loading into SQL Server in **raw_data** table:
          ```bash
             python main.py
          ```
