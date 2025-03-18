@@ -1,4 +1,12 @@
-INSERT INTO fact_sales (
+use InvoiceDWH
+Go
+
+
+/* -----------------------------------------------------------
+   Inserting transactional sales data into the FACT_SALES table
+----------------------------------------------------------- */
+
+INSERT INTO dbo.FACT_SALES (
 						invoice_id
 						,customer_id
 						,product_id
@@ -25,4 +33,4 @@ INNER JOIN [dbo].dim_customer c
 	ON c.customer = f.customer
 LEFT JOIN [dbo].dim_product p 
 	ON p.STOCKCODE = f.PRODUCT
-where PRICE >0.00
+where PRICE >0.00 -- Filtering to exclude records with non-positive prices

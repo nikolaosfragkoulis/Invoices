@@ -1,6 +1,11 @@
-1) In order to import the CSV to a dataframe we used different encodings
-2) We converted the InvoiceDate to datetime format
-3) In the Description Column we filled the missing values with the value 'Unknown Product'
-4) In the Country Column we filled the missing values with the value 'Unspecified'
-5) In the Customer Column we filled the missing values with the value 'Unknown'
-6) We removed rows with missing price because are assumed to be invalid and excluded
+1) In order to import the CSV to a dataframe we used different encodings.
+2) We converted the InvoiceDate to datetime format.
+3) In the Description Column we filled the missing values with the value 'Unknown Product'.
+4) In the Country Column we filled the missing values with the value 'Unspecified'.
+5) In the Customer Column we filled the missing values with the value 'Unknown'.
+6) We removed rows with missing price because are assumed to be invalid and excluded.
+7) Transactions with non-positive prices are not included in the FACT_SALES table.A non-positive price may indicate invalid, missing, or promotional transactions, which should not be included in our product dimension.
+The most recent product description is used
+8)If a product appears multiple times with different descriptions, the latest available description (based on transaction date) is considered.
+
+

@@ -38,6 +38,8 @@ def load_cleaned_Data():
     
     df = df.dropna(subset=["Price"])
 
+    # Remove duplicate rows
+    df = df.drop_duplicates()
 
 
     return df
