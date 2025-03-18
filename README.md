@@ -11,9 +11,6 @@ The project is structured for easy maintenance, extension, and execution on any 
     To enhance portability, we created a **config.py** file that dynamically determines the project's file paths and includes database connection details.
     This ensures that the project works correctly regardless of the computer or directory in which it is placed.
 
-   **Centralized Settings:**
-    The configuration file also includes a list of CSV filename to be processed, keeping all file path settings in one centralized location.
-
 2. ###Data Ingestion and Preparation
     **Raw Data:**
     We began with raw invoice data provided in CSV format stored in the football_datasets/ folder.
