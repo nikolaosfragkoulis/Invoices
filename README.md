@@ -67,9 +67,9 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
 
 ### **6. Aggregations**
    - Created SQL queries for three key aggregations:
-     - **Total Revenue per Month (Aggregation_1.sql)**
+     - **Total Revenue per Month (Aggregation_3.sql)**
      - **Top 10 Best-Selling Products (Aggregation_2.sql)**
-     - **Revenue by Country (Aggregation_3.sql)**
+     - **Revenue by Country (Aggregation_1.sql)**
    - Queries can be executed in **SQL Server Management Studio**.
 
 ---
@@ -142,9 +142,9 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
       ### Step 3: Run SQL Aggregation Queries**
        Once the data is fully loaded, execute the following SQL queries to analyze the dataset:
 
-      - **Total Revenue per Month:** Run **Aggregation_1.sql**
+      - **Total Revenue per Month:** Run **Aggregation_3.sql**
       - **Top 10 Best-Selling Products:** Run **Aggregation_2.sql**
-      - **Revenue by Country:** Run **Aggregation_3.sql**
+      - **Revenue by Country:** Run **Aggregation_1.sql**
 
 These queries will provide insights into sales trends, product performance, and market distribution.
 
