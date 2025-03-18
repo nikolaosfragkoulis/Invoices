@@ -13,20 +13,29 @@ The project is structured for easy maintenance, extension, and execution on any 
 
 2. ### Data Ingestion and Preparation
     **Raw Data:**
-    We began with raw invoice data provided in CSV format stored in the football_datasets/ folder.
+    We began with raw invoice data provided in CSV format stored in the **football_datasets/ folder**.
 
-Invoices/
-│── Code/
-│   ├── config.py
-│   ├── data_cleaning.py
-│   ├── data_ingestion.py
-│   ├── ETL.py
-│   ├── main.py
-│   ├── sql_cred.env
-│   ├── README.md 
-│── invoice_files/
-│── Assumptions-Abnormalities.txt
-
+      ```
+      Invoices/
+      │── Code/
+      │   ├── config.py
+      │   ├── data_cleaning.py
+      │   ├── data_ingestion.py
+      │   ├── ETL.py
+      │   ├── main.py
+      │   ├── sql_cred.env
+      │   ├── README.md  <-- You are here
+      │── SQL_queries/
+      │   ├── 1_Database_schema_creation.sql
+      │   ├── Fill_dim_tables.sql
+      │   ├── Fill_Fact_table.sql
+      │   ├── Examples_of_Data_investigation.sql
+      │   ├── Revenue_by_Country.sql
+      │   ├── Top_10_Best_Selling_Products.sql
+      │   ├── Total_Revenue_per_Month.sql
+      │── invoice_files/
+      │── Assumptions-Abnormalities.txt
+      ```
 
 ## Steps to Run the Project
 
@@ -64,12 +73,19 @@ Invoices/
       2. Open the file **1_Database_schema_creation.sql** in SSMS.
       3. Click Execute 
 
+ 3. **Run the Python Script**
 
+     ### Step 1: Install Required Dependencies
 
-  2. **Navigate to the Project Directory**
+      1. Open the command prompt.
+      2. Navigate to the **Invoices** directory:
 
-   Change your current directory to the newly cloned project:
-
+cd path/to/Invoices/Code
+Run the requirements.py script to install dependencies:
+sh
+Αντιγραφή
+Επεξεργασία
+python requirements.py
    ```bash
    cd Invoices
    ```
