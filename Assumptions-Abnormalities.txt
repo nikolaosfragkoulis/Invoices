@@ -1,0 +1,6 @@
+1) In order to import the CSV to a dataframe we used different encodings
+2) We converted the InvoiceDate to datetime format
+3) In the Description Column we filled the missing values with the value 'Unknown Product'
+4) In the Country Column we filled the missing values with the value 'Unspecified'
+5) In the Customer Column we filled the missing values with the value 'Unknown'
+6) We removed rows with missing price because are assumed to be invalid and excluded
