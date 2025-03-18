@@ -84,7 +84,7 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
    git clone https://github.com/nikolaosfragkoulis/Invoices.git
    ```
 
-  2. **Setting Up SQL Server Credentials & Running the First Query**
+  2. **Setting Up SQL Server Credentials & Running the First Query for DB schema creation**
 
      ### Step 1: Configure SQL Server Credentials
       
@@ -110,7 +110,7 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
       2. Open the file **1_Database_schema_creation.sql** in SSMS.
       3. Click Execute to create the database schema.
 
- 3. **Run the Python Script**
+  3. **Run the Python Script**
 
      ### Step 1: Install Required Dependencies
 
@@ -122,7 +122,30 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
          ```
 
      ### Step 2: Run the main script
-      1. Run the script:
+      1. Run the script in order to extract data, clean it, and prepare it for loading into SQL Server in **'raw_data'** table:
          ```bash
             python main.py
          ```
+
+         
+  4. **Fill DWH tables with values**
+
+      ### Step 1: Load Dimension Tables
+        1. Navigate to the **Invoices/SQL_queries** folder.
+        2. Open **2_Fill_Dim_tables.sql** in SSMS.
+        3. Click **Execute** to populate the dimension tables.
+
+      ### Step 2: Load Fact Table
+        1. Open **3_Fill_Fact_table.sql** in SSMS.
+        2. Click **Execute** to populate the `fact_sales` table with transactional data.
+  
+      ### Step 3: Run SQL Aggregation Queries**
+       Once the data is fully loaded, execute the following SQL queries to analyze the dataset:
+
+      - **Total Revenue per Month:** Run **Aggregation_1.sql**
+      - **Top 10 Best-Selling Products:** Run **Aggregation_2.sql**
+      - **Revenue by Country:** Run **Aggregation_3.sql**
+
+These queries will provide insights into sales trends, product performance, and market distribution.
+
+---
