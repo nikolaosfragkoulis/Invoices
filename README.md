@@ -24,7 +24,7 @@ The project is structured for easy maintenance, extension, and execution on any 
       │   ├── ETL.py
       │   ├── main.py
       │   ├── sql_cred.env
-      │   ├── README.md  <-- You are here
+      │   ├── requirements.txt
       │── SQL_queries/
       │   ├── 1_Database_schema_creation.sql
       │   ├── Fill_dim_tables.sql
@@ -34,7 +34,9 @@ The project is structured for easy maintenance, extension, and execution on any 
       │   ├── Top_10_Best_Selling_Products.sql
       │   ├── Total_Revenue_per_Month.sql
       │── invoice_files/
+      │   ├── Invoices_Year_2009-2010.csv
       │── Assumptions-Abnormalities.txt
+      ├── README.md
       ```
 
 ## Steps to Run the Project
