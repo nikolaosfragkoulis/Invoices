@@ -78,35 +78,14 @@ The project is structured for easy maintenance, extension, and execution on any 
      ### Step 1: Install Required Dependencies
 
       1. Open the command prompt.
-      2. Navigate to the **Invoices** directory:
+      2. Navigate to the **Invoices/Code** directory:
+      3. Run the **requirements.py** script to install dependencies:
+         ```bash
+            pip install -r requirements.txt
+         ```
 
-cd path/to/Invoices/Code
-Run the requirements.py script to install dependencies:
-sh
-Αντιγραφή
-Επεξεργασία
-python requirements.py
-   ```bash
-   cd Invoices
-   ```
-
-  3. **Create and Activate a virtual environment (Optional)**
-  
-   - **Create a new environment**:
-     ```bash
-     python -m venv venv
-     ```
-   - **Activate the environment**:
-     ```bash
-     venv\Scripts\activate
-     ```
-
-  4. **Install Dependencies**
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-  4. **Run the code**
-   ```bash
-   python Code\main.py
-   ```
+     ### Step 2: Run the code
+      1. Run the script:
+         ```bash
+            python main.py
+         ```
