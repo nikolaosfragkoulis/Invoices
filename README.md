@@ -33,7 +33,7 @@ The project is structured for easy maintenance, extension, and execution on any 
    Change your current directory to the newly cloned project:
 
    ```bash
-   cd Gaming
+   cd Invoices
    ```
 
   3. **Create and Activate a virtual environment (Optional)**
