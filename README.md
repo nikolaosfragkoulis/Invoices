@@ -8,7 +8,7 @@ The project is structured for easy maintenance, extension, and execution on any 
 
 1. ### Dynamic Configuration of File Paths
     **Modular Configuration:**
-    To enhance portability, we created a **config.py** file that dynamically determines the project's file paths and database connection details.
+    To enhance portability, we created a **config.py** file that dynamically determines the project's file paths and includes database connection details.
     This ensures that the project works correctly regardless of the computer or directory in which it is placed.
 
    **Centralized Settings:**
