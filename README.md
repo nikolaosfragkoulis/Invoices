@@ -13,7 +13,7 @@ The project is structured for easy maintenance, extension, and execution on any 
 
 2. ### Data Ingestion and Preparation
     **Raw Data:**
-    We began with raw invoice data provided in CSV format stored in the **football_datasets/ folder**.
+    We began with raw invoice data provided in CSV format stored in the **invoice_files/** folder.
 
       ```
       Invoices/
