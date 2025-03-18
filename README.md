@@ -39,10 +39,10 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
 
 
 
-## **📝 Documentation - Steps Taken to Reach the Final Solution
+## 📝 Documentation - Steps Taken to Reach the Final Solution
 
 ### **1. Dynamic Configuration**
-   - Created **config.py*** file to dynamically determine the project's file paths
+   - Created **config.py** file to dynamically determine the project's file paths
    - Included database connection details and env variables
 
 ### **2. Data Ingestion and Preparation**
@@ -65,13 +65,14 @@ This project follows a structured ETL (Extract, Transform, Load) process to:
    - Handled multiple descriptions for the same product by keeping the latest description.
    - Removed transactions with zero or negative price values.
 
-### **6. Business Assumptions & Data Issues**
+### **6. Aggregations**
    - Created SQL queries for three key aggregations:
-   - **Total Revenue per Month ('Aggregation_1.sql')**
-   - **Top 10 Best-Selling Products ('Aggregation_2.sql')**
-   - **Revenue by Country ('Aggregation_3.sql')**
+     - **Total Revenue per Month ('Aggregation_1.sql')**
+     - **Top 10 Best-Selling Products ('Aggregation_2.sql')**
+     - **Revenue by Country ('Aggregation_3.sql')**
    - Queries can be executed in **SQL Server Management Studio**.
 
+---
 
 ## Steps to Run the Project
 
