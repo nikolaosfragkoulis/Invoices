@@ -67,7 +67,7 @@ The project is structured for easy maintenance, extension, and execution on any 
 
      ### Step 2: Open SQL Server Management Studio (SSMS)
       1. Launch SQL Server Management Studio (SSMS).
-      2. Connect to your SQL Server using the credentials you entered in sql_cred.env.
+      2. Connect to your SQL Server using the credentials you entered in **sql_cred.env**.
       3. Open a new Query Editor.
 
      ### Step 3: Execute the First SQL Query
